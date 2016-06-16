@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+template<typename T>
+T linearSearch(const T list[], T key, T arraySize)
+{
+	for (int i = 0; i < arraySize; i++)
+	{
+		if (key == list[i])
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+int main()
+{
+	int list[] = {1, 4, 4, 2, 5, -3, 6, 2};
+	double list1[] = {1.1, 5.9, 3.8, -4.0, 5.3, 8.5, 7.0, 6.8};
+	string list2[] = {"dog", "cat", "cow", "yes", "red", "big", "two", "one"}
+	int i = linearSearch(list, 4, 8);
+	int j = linearSearch(list, -4, 8);
+	int k = linearSearch(list, -3, 8);
+	
+	return 0;
+}
