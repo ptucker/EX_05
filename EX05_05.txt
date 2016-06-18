@@ -1,0 +1,115 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Account
+{
+	private:
+	string name;
+	int ID;
+	double balance;
+	static double annualInterestRate;
+	vector<Transaction> accountTransactions;
+	
+	public:
+	
+	Account()
+	{
+		name = 0;
+		ID = 0;
+		balance = 0;
+		annualInterestRate = 0;
+	}
+	
+	Account(string setname, int setID, double setbalance, double setannualInterestRate)
+	{
+		name = setname;
+		ID = setID;
+		balance = setbalance;
+		setannualInterestRate;
+	}
+	
+	Account(string setname, int setID, double setbalance)
+	{
+		name = setname;
+		ID = setID;
+		balance = setbalance;
+	}
+	
+	string getName()
+	{
+		return name;
+	}
+	
+	int getID()
+	{
+		return ID;
+	}
+	
+	double getAnnualInterestRate()
+	{
+		return annualInterestRate;
+	}
+	
+	double monthlyInterestRate = annualInterestRate / 12;
+	
+	double getMonthlyInterestRate()
+	{
+		return MonthlyInterestRate;
+	}
+	
+	double withdraw(double amount)
+	{
+		Transaction(char settype, double setamount, double setbalance, string setdescription);
+		balance = (balance - amount);
+		accountTransactions.push_back(accountTransactions);
+	}
+	
+	double deposit(double amount)
+	{
+		Transaction(char settype, double setamount, double setbalance, string setdescription);
+		balance = (balance + amount);
+		accountTransactions.push_back(accountTransactions);
+	}
+	
+}
+
+class Transaction
+{
+	private:
+	
+	Date date;
+	char type;
+	double amount;
+	double balance;
+	string description;
+	
+	public:
+	
+	Transaction(char settype, double setamount, double setbalance, string setdescription)
+	{
+		type = settype;
+		amount = setamount;
+		balance = setbalance;
+		description = setdescription;
+	}
+	void printsummary(Transaction)
+	{
+		cout << name << endl;
+		cout << annualInterestRate << endl;
+		cout << balance << endl;
+		cout << accountTransactions << endl;
+	}
+}
+
+int main ()
+{
+	Account account('George', 1122, 1000, 1.5);
+	account.deposit(30);
+	account.deposit(40);
+	account.deposit(50);
+	account.withdraw(5);
+	account.withdraw(4); 
+	account.withdraw(2);
+} 
+	
