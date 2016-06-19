@@ -22,7 +22,7 @@ class Vector
 		}
 	}
 	
-	Vector(int vectorElements[] int sizeOfVector);
+	Vector(int vectorElements[], int sizeOfVector);
 	{
 	
 	}
