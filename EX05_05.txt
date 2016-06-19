@@ -55,7 +55,7 @@ class Account
 	
 	double getMonthlyInterestRate()
 	{
-		return MonthlyInterestRate;
+		return monthlyInterestRate;
 	}
 	
 	double withdraw(double amount)
