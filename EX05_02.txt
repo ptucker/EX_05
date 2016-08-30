@@ -4,16 +4,17 @@ using namespace std;
 template<typename T>
 bool isSorted(const T list[], int size)
 {
+//PT -- bool sort = true;
 	do
 	{	bool sort = false
 		for (int i = 0; i < size; i++)
 			{
 				if(list[i] <= list[i+1])
-				sort = true;
+				sort = true; //PT and here, if you find it not sorted, set sort to false.
 			{
 	}while(sort == true;)
 	
-	return true;
+	return true; //PT -- finally, return sort.
 }
 
 int main()
