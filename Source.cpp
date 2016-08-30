@@ -10,6 +10,7 @@ class Vector
 	
 	Vector();
 	{
+		//PT -- (see the private section) then here, vectorElements = new int(100);
 		vectorElements[100] = {0};
 		sizeOfVector = 0;
 	}
@@ -68,6 +69,7 @@ class Vector
 	}
 	
 	private:
+	//PT -- this needs to be a int*, not an int array
 	int vectorElements[100];
 	static int sizeOfVector;
 }
